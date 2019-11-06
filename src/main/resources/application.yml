@@ -1,0 +1,9 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/lanca_articles?characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    username: ${mysql_username:root}
+    password: ${mysql_password:root}
+    driver- class-name: com.mysql.jdbc.Driver # 需要数据库连接驱动

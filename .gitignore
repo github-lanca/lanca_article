@@ -1,0 +1,13 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+.idea
+*.iml
+out
+gen
+target
+.DS_Store
+LOG_PATH_IS_UNDEFINED
+data
+### Example user template template
+### Example user template
+

@@ -6,4 +6,4 @@ spring:
     url: jdbc:mysql://localhost:3306/lanca_articles?characterEncoding=utf8&useSSL=false&serverTimezone=UTC
     username: ${mysql_username:root}
     password: ${mysql_password:root}
-    driver- class-name: com.mysql.jdbc.Driver # ĞèÒªÊı¾İ¿âÁ¬½ÓÇı¶¯
+    driver- class-name: com.mysql.jdbc.Driver # mysqlæ•°æ®åº“é©±åŠ¨

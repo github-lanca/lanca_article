@@ -45,13 +45,13 @@ public class ArticleDaoTest {
         article.setUserId(userId);
         article.setArticleTitle("百度查询结果");
         article.setArticleId(2019110672000L);
-        article.setArticleCreatetime(new Date());
+        article.setArticleCreateTime(new Date());
         //文章评论数量
         article.setArticleCommentCount(520L);
         article.setArticleLikeCount(100L);
         article.setArticleViews(10000L);
-        article.setAeticleUpdatetime(new SimpleDateFormat("yyyy-MM-dd").parse("1992-09-01"));
-        article.setAcrticleContent(new String("百度为您找到相关结果约34,200,000个\n" +
+        article.setAeticleUpdateTime(new SimpleDateFormat("yyyy-MM-dd").parse("1992-09-01"));
+        article.setArticleContent(new String("百度为您找到相关结果约34,200,000个\n" +
                 "Java中String字符串的存储大小?也就是容量是多少呢?能存多少字符。\n" +
                 "2个回答 - 回答时间: 2017年11月21日 - 48人觉得有用\n" +
                 "\n" +

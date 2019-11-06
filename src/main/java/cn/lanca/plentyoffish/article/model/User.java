@@ -17,73 +17,47 @@ import java.util.Date;
 @NoArgsConstructor
 public class User {
     /**
-     * user_id
-     * bigint
-     * 用户ID
-     * user_id
+     * 用户唯一标识ID(user_id)
      */
     private Long userId;
-
     /**
-     * user_ip
-     * varchar
-     * 用户ip
+     * 用户ip(user_ip)
      */
     private String userIp;
-
     /**
-     * user_name
-     * varchar
-     * 用户名
+     * 用户名(user_name)
      */
     private String userName;
     /**
-     * user_password
-     * varchar
-     * 用户密码
+     * 用户密码(user_password)
      */
     private String userPassword;
-
     /**
-     * user_email
-     * varchar
-     * 用户邮箱
+     * 用户邮箱(user_email)
      */
     private String userEmail;
     /**
-     * user_profile_photo
-     * varchar
-     * 用户头像
+     * 用户头像(user_profile_photo)
      */
     private String userProfilePhoto;
     /**
-     * user_registration_time
-     * datetime
-     * 用户注册时间
+     * 用户注册时间(user_registration_time)
      */
     private Date userRegistrationTime;
     /**
-     * user_birthday
-     * date
-     * 用户生日
+     * 用户生日(user_birthday)
      */
     private Date userBirthday;
     /**
-     * user_age
-     * tinyint
-     * 用户年龄
+     * 用户年龄(user_age)
      */
     private Long userAge;
     /**
-     * user_telphone_number
-     * int
-     * 用户手机号
+     * 用户手机号(user_telphone_number)
      */
     private Long userTelphoneNumber;
     /**
-     * user_nickname
-     * varchar
-     * 用户昵称
+     * 用户昵称(user_nickname)
      */
     private String userNickname;
 }

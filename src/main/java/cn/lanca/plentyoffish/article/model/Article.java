@@ -1,6 +1,5 @@
 package cn.lanca.plentyoffish.article.model;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,51 +17,47 @@ import java.util.Date;
 @NoArgsConstructor
 public class Article {
     /**
-     * article_id	bigint
-     * 文章id
+     * article_id
+     * 文章唯一标识id
      */
     private Long articleId;
-
     /**
-     * user_id	bigint
+     * user_id
      * 用户id/文章发表者id
      */
     private Long userId;
     /**
-     * article_title	text
+     * article_title)
      * 文章题目
-     * 一般用String就可以了，
-     * 如果文本过大的话，
-     * 可以使用 java.sql 包下的Clob类。
      */
     private String articleTitle;
     /**
-     * acrticle_content	longtext
+     * article_content
      * 文章内容
      */
-    private String acrticleContent;
+    private String articleContent;
     /**
-     * article_views	bigint
+     * article_views
      * 文章浏览量
      */
     private Long articleViews;
     /**
-     * article_comment_count	bigint
+     * article_comment_count
      * 文章评论数
      */
     private Long articleCommentCount;
     /**
-     * article_createtime	datetime
+     * article_createtime
      * 文章创建时间
      */
-    private Date articleCreatetime;
+    private Date articleCreateTime;
     /**
-     * aeticle_updatetime	datetime
+     * aeticle_updatetime
      * 文章最后一次更新时间
      */
-    private Date aeticleUpdatetime;
+    private Date aeticleUpdateTime;
     /**
-     * article_like_count	bigint
+     * article_like_count
      * 文章点赞数
      */
     private Long articleLikeCount;

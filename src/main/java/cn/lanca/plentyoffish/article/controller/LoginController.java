@@ -85,6 +85,6 @@ public class LoginController {
      */
     @GetMapping("/logout")
     public String logout(User user) {
-        return "";
+        return "退出成功";
     }
 }

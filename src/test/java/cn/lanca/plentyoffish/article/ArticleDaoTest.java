@@ -39,7 +39,7 @@ public class ArticleDaoTest {
 
     @Test
     public void articleDaoTest() throws Exception {
-        User userInfo = userRegisterDao.getUserInfo();
+        User userInfo = userRegisterDao.getUserInfo(13451531649L);
         Long userId = userInfo.getUserId();
         Article article = new Article();
         article.setUserId(userId);

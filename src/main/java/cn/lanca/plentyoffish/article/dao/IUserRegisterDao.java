@@ -41,8 +41,10 @@ public interface IUserRegisterDao {
     Long getUserTelphoneNumber(@Param("userTelphoneNumber") long userTelphoneNumber);
 
     /**
+     * 根据电话号码查出用户个人信息
      *
-     * @return
+     * @param phoneNumber 电话号码
+     * @return User
      */
     @Results(
             id = "user",
@@ -60,6 +62,7 @@ public interface IUserRegisterDao {
                     @Result(column = "user_nickname", property = "userNickname")
             }
     )
-    @Select("select * from lanca_users where user_telphone_number = '13451531649'")
-    User getUserInfo();
+    @Select("select user_id,user_ip,user_name,user_password,user_email,user_profile_photo,user_registration_time,"
+            + "user_birthday,user_age,user_telphone_number,user_nickname from lanca_users where user_telphone_number = #{phoneNumber}")
+    User getUserInfo(@Param("phoneNumber") Long phoneNumber);
 }

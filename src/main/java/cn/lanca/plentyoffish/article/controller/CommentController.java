@@ -1,7 +1,7 @@
 package cn.lanca.plentyoffish.article.controller;
 
 import cn.lanca.plentyoffish.article.model.Comment;
-import cn.lanca.plentyoffish.article.service.ICommentServer;
+import cn.lanca.plentyoffish.article.service.ICommentService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,7 +20,7 @@ public class CommentController {
      * 注入 commentServer
      */
     @Autowired
-    private ICommentServer commentServer;
+    private ICommentService commentService;
 
     /**
      * 新增/添加 评论
@@ -31,7 +31,7 @@ public class CommentController {
     @ApiOperation("新增/添加 评论")
     @GetMapping("/comment/add")
     public String insertNewComment(@RequestParam Comment comment) {
-        Long aLong = commentServer.insertNewComment(comment);
+        Long aLong = commentService.insertNewComment(comment);
         if (aLong != null && aLong > 0) {
             return "评论成功";
         }

@@ -2,7 +2,7 @@ package cn.lanca.plentyoffish.article.service.impl;
 
 import cn.lanca.plentyoffish.article.dao.IUserRegisterDao;
 import cn.lanca.plentyoffish.article.model.User;
-import cn.lanca.plentyoffish.article.service.IUserRegisterServer;
+import cn.lanca.plentyoffish.article.service.IUserRegisterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
  * Date: 2019/11/5 15:52
  */
 @Service
-public class UserRegisterServerImpl implements IUserRegisterServer {
+public class UserRegisterServiceImpl implements IUserRegisterService {
 
     /**
      * 注入 userRegisterDao

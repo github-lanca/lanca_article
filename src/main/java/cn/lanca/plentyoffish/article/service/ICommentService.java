@@ -8,7 +8,7 @@ import cn.lanca.plentyoffish.article.model.Comment;
  * Author: Hongliang.mei
  * Date: 2019/11/7 15:38
  */
-public interface ICommentServer {
+public interface ICommentService {
 
 
     /**

@@ -2,7 +2,7 @@ package cn.lanca.plentyoffish.article.service.impl;
 
 import cn.lanca.plentyoffish.article.dao.ICommentDao;
 import cn.lanca.plentyoffish.article.model.Comment;
-import cn.lanca.plentyoffish.article.service.ICommentServer;
+import cn.lanca.plentyoffish.article.service.ICommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
  * Date: 2019/11/7 15:38
  */
 @Service
-public class CommentServerImpl implements ICommentServer {
+public class CommentServiceImpl implements ICommentService {
     /**
      * 注入commentDao
      */

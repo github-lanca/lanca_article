@@ -2,7 +2,7 @@ package cn.lanca.plentyoffish.article.controller;
 
 import cn.lanca.plentyoffish.article.model.Article;
 import cn.lanca.plentyoffish.article.model.User;
-import cn.lanca.plentyoffish.article.service.IArticleServer;
+import cn.lanca.plentyoffish.article.service.IArticleService;
 import com.github.pagehelper.PageInfo;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -26,7 +26,7 @@ public class ArticleController {
      * 注入 articleServer
      */
     @Autowired
-    private IArticleServer articleServer;
+    private IArticleService articleService;
 
     /**
      * 新增 文章内容 接口,需保存文章相关信息
@@ -39,7 +39,7 @@ public class ArticleController {
     @PostMapping("/article/add")
     public String addNewArticle(@RequestParam User user, @RequestParam Article article) {
         // User and Article Object need to structure(构造)
-        return articleServer.addArticleInfo(user, article);
+        return articleService.addArticleInfo(user, article);
     }
 
     /**
@@ -56,7 +56,7 @@ public class ArticleController {
             @RequestParam(value = "current_page", defaultValue = "1", required = false) Integer currentPage,
             @ApiParam(value = "每页条数，查询全部请传0")
             @RequestParam(value = "page_size", defaultValue = "10", required = false) Integer pageSize) {
-        PageInfo<Article> allArticleListInfo = articleServer.getAllArticleListInfo(currentPage, pageSize);
+        PageInfo<Article> allArticleListInfo = articleService.getAllArticleListInfo(currentPage, pageSize);
         return allArticleListInfo;
     }
 

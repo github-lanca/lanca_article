@@ -8,7 +8,7 @@ import cn.lanca.plentyoffish.article.model.User;
  * Author: Hongliang.mei
  * Date: 2019/11/5 15:52
  */
-public interface IUserRegisterServer {
+public interface IUserRegisterService {
     /**
      * @param user 用户对象
      */

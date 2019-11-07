@@ -3,7 +3,7 @@ package cn.lanca.plentyoffish.article.service.impl;
 import cn.lanca.plentyoffish.article.dao.IArticleDao;
 import cn.lanca.plentyoffish.article.model.Article;
 import cn.lanca.plentyoffish.article.model.User;
-import cn.lanca.plentyoffish.article.service.IArticleServer;
+import cn.lanca.plentyoffish.article.service.IArticleService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ import java.util.List;
  * Date: 2019/11/5 18:16
  */
 @Service
-public class ArticleServerImpl implements IArticleServer {
+public class ArticleServiceImpl implements IArticleService {
     /**
      * 注入 articleDao
      */

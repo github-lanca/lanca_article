@@ -6,7 +6,7 @@ package cn.lanca.plentyoffish.article.service;
  * Author: Hongliang.mei
  * Date: 2019/11/6 15:41
  */
-public interface ILoginServer {
+public interface ILoginService {
     /**
      * 1.通过电话登陆
      *

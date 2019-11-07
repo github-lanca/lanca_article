@@ -10,7 +10,7 @@ import com.github.pagehelper.PageInfo;
  * Author: Hongliang.mei
  * Date: 2019/11/5 18:16
  */
-public interface IArticleServer {
+public interface IArticleService {
     /**
      * 新增 文章内容 接口,需保存文章相关信息
      *

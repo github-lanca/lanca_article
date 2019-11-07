@@ -2,7 +2,7 @@ package cn.lanca.plentyoffish.article.service.impl;
 
 import cn.lanca.plentyoffish.article.dao.ILoginDao;
 import cn.lanca.plentyoffish.article.model.User;
-import cn.lanca.plentyoffish.article.service.ILoginServer;
+import cn.lanca.plentyoffish.article.service.ILoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
  * Date: 2019/11/6 15:41
  */
 @Service
-public class LoginServerImpl implements ILoginServer {
+public class LoginServiceImpl implements ILoginService {
     /**
      * 注入 loginDao
      */

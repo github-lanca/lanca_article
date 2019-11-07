@@ -1,7 +1,7 @@
 package cn.lanca.plentyoffish.article.controller;
 
 import cn.lanca.plentyoffish.article.model.User;
-import cn.lanca.plentyoffish.article.service.ILoginServer;
+import cn.lanca.plentyoffish.article.service.ILoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -25,7 +25,7 @@ public class LoginController {
      * z注入 loginServer
      */
     @Autowired
-    private ILoginServer loginServer;
+    private ILoginService loginService;
 
     /**
      * #1.电话号码校验
@@ -39,7 +39,7 @@ public class LoginController {
     @PostMapping("/login/phone")
     public String longiByPhone(@RequestParam Long phoneNumber,
                                @RequestParam String password) {
-        boolean b = loginServer.loginByPhone(phoneNumber, password);
+        boolean b = loginService.loginByPhone(phoneNumber, password);
         if (b) {
             return "验证通过,允许登陆";
         }
@@ -56,7 +56,7 @@ public class LoginController {
     @PostMapping("/login/email")
     public String loginByEmail(@RequestParam String userEmail,
                                @RequestParam String password) {
-        boolean b = loginServer.loginByEmail(userEmail, password);
+        boolean b = loginService.loginByEmail(userEmail, password);
         if (b) {
             return "验证通过,允许登陆";
         }

@@ -1,5 +1,7 @@
 package cn.lanca.plentyoffish.article.service;
 
+import cn.lanca.plentyoffish.article.model.Comment;
+
 /**
  * Description: 文章评论业务接口层
  * <p>
@@ -8,5 +10,12 @@ package cn.lanca.plentyoffish.article.service;
  */
 public interface ICommentServer {
 
-    //todo crud
+
+    /**
+     * 新增/添加评论
+     *
+     * @param comment 评论对象
+     * @return Long
+     */
+    Long insertNewComment(Comment comment);
 }

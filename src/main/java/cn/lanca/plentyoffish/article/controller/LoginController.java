@@ -1,8 +1,10 @@
 package cn.lanca.plentyoffish.article.controller;
 
+import cn.lanca.plentyoffish.article.model.User;
 import cn.lanca.plentyoffish.article.service.ILoginServer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * 1.通过电话登陆
  * 2.通过email登陆
  * 3.通过第三方二维码登陆
+ * 4.退出
  * <p>
  * Author: Hongliang.mei
  * Date: 2019/11/6 15:33
@@ -33,7 +36,7 @@ public class LoginController {
      * @param password    String类型密码
      * @return
      */
-    @GetMapping("/login/phone")
+    @PostMapping("/login/phone")
     public String longiByPhone(@RequestParam Long phoneNumber,
                                @RequestParam String password) {
         boolean b = loginServer.loginByPhone(phoneNumber, password);
@@ -50,7 +53,7 @@ public class LoginController {
      * @param password  String类型的密码
      * @return
      */
-    @GetMapping("/login/email")
+    @PostMapping("/login/email")
     public String loginByEmail(@RequestParam String userEmail,
                                @RequestParam String password) {
         boolean b = loginServer.loginByEmail(userEmail, password);
@@ -73,4 +76,15 @@ public class LoginController {
         return "";
     }
 
+
+    /**
+     * 4.退出登陆
+     *
+     * @param user 用户对象
+     * @return
+     */
+    @GetMapping("/logout")
+    public String logout(User user) {
+        return "";
+    }
 }

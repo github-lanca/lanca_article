@@ -19,10 +19,17 @@
         <springfox-swagger-ui.version>2.6.1</springfox-swagger-ui.version>
         <springfox-swagger2.version>2.6.1</springfox-swagger2.version>
         <commons-logging>1.1.3</commons-logging>
-
     </properties>
 
     <dependencies>
+
+        <!-- 分页插件 -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.2.10</version>
+        </dependency>
+
         <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>

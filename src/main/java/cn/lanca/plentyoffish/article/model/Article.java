@@ -55,7 +55,7 @@ public class Article {
      * aeticle_updatetime
      * 文章最后一次更新时间
      */
-    private Date aeticleUpdateTime;
+    private Date articleUpdateTime;
     /**
      * article_like_count
      * 文章点赞数

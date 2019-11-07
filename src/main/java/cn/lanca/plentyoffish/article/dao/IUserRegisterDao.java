@@ -60,6 +60,6 @@ public interface IUserRegisterDao {
                     @Result(column = "user_nickname", property = "userNickname")
             }
     )
-    @Select("select * from lanca_users where user_telphone_number = '13752935158'")
+    @Select("select * from lanca_users where user_telphone_number = '13451531649'")
     User getUserInfo();
 }

@@ -2,6 +2,7 @@ package cn.lanca.plentyoffish.article.service;
 
 import cn.lanca.plentyoffish.article.model.Article;
 import cn.lanca.plentyoffish.article.model.User;
+import com.github.pagehelper.PageInfo;
 
 /**
  * Description:
@@ -18,4 +19,13 @@ public interface IArticleServer {
      * @return 保存结果信息 success/failure  成功/失败
      */
     String addArticleInfo(User user, Article article);
+
+    /**
+     * 文章展示列表,做成 分页查询
+     *
+     * @param currentPage 当前页
+     * @param pageSize    每页显示条数
+     * @return PageInfo<Article>
+     */
+    PageInfo<Article> getAllArticleListInfo(Integer currentPage, Integer pageSize);
 }

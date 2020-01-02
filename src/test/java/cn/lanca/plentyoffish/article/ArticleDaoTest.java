@@ -4,19 +4,14 @@ import cn.lanca.plentyoffish.article.dao.IArticleDao;
 import cn.lanca.plentyoffish.article.dao.IUserRegisterDao;
 import cn.lanca.plentyoffish.article.model.Article;
 import cn.lanca.plentyoffish.article.model.User;
-import com.mysql.jdbc.Clob;
-import com.mysql.jdbc.Connection;
-import com.mysql.jdbc.ExceptionInterceptor;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Properties;
 
 /**
  * Description:

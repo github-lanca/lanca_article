@@ -6,7 +6,7 @@ spring:
     url: jdbc:mysql://localhost:3306/lanca_articles?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: ${mysql_username:root}
     password: ${mysql_password:root}
-    driver- class-name: com.mysql.jdbc.Driver # mysql数据库驱动
+    driver- class-name: com.mysql.cj.jdbc.Driver # mysql数据库驱动
 
 #pagehelper分页插件
 pagehelper:

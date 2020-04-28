@@ -34,6 +34,7 @@ public interface ILoginDao {
     )*/
 
     /**
+     * fuck 就封装了密码和电话两个字段
      * @param phoneNumber 电话号码
      * @return User
      */
